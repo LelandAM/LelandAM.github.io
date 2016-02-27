@@ -1,6 +1,6 @@
 # 3.5 Your Website Solo Challenge Reflection
 
-### ![My Live Site](/index.html)
+### [My Live Site](index.html)
 
 ## What did you learn about CSS padding, borders, and margin by doing this challenge?
 I learned that all margin values stack up easily on nested elements and it's easiest to keep margins at zero for objects until you actually need to move them.

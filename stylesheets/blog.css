@@ -72,3 +72,10 @@ div > a{
   margin-left:0px;
   margin-top:15px;
 }
+.html-demo{
+  margin-bottom:90px;
+}
+img{
+  position: relative;
+    margin-left: 20px;
+}

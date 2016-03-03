@@ -11,7 +11,7 @@ hr{
   border: 0;
     height: 1px;
     background: #333;
-    background-image: linear-gradient(to right, #fff, #666, #fff)
+    background-image: linear-gradient(to right, ##f2f2f2, #666, ##f2f2f2)
 }
 
 h1{
@@ -44,6 +44,10 @@ a{
   text-align:center;
   color:#8c8c8c;
 }
+div a{
+  margin-left:0px;
+  color: #4d4d4d;
+}
 
 a:hover{
   color:#990000;
@@ -62,4 +66,12 @@ h2{
 p{
   margin-left:5px;
   margin-top:5px;
+}
+.intro{
+  padding:10px;
+  display: block;
+  margin-left: 1em;
+  margin-right:1em;
+  font-size: 3em;
+
 }

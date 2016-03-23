@@ -30,8 +30,7 @@ h1{
 }
 
 .bottom-nav{
-  font-family:Arial; sans-serif;
-  font-size: 12px;
+  position: relative;
   margin:auto;
   margin-top: 50px;
 
@@ -79,12 +78,13 @@ p{
   width: 40px;
 }
 
-}
 .left_table{
-  text-align: justify;
-  width: 250px;
+  padding: none;
+  margin-right: 20px;
 }
 
 .right_table{
-  margin-left: 20px;
+  text-align: justify;
+  padding-left: 20px;
+  padding-top: 10px;
 }

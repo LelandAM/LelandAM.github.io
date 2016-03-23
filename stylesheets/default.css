@@ -79,3 +79,12 @@ p{
   width: 40px;
 }
 
+}
+.left_table{
+  text-align: justify;
+  width: 250px;
+}
+
+.right_table{
+  margin-left: 20px;
+}

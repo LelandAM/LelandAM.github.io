@@ -10,8 +10,8 @@ body{
 hr{
   border: 0;
     height: 1px;
-    background: #333;
-    background-image: linear-gradient(to right, ##f2f2f2, #666, ##f2f2f2)
+    background: ##f2f2f2;
+    background-image: linear-gradient(to right, #f2f2f2, #666666, #f2f2f2)
 }
 
 h1{
@@ -30,8 +30,7 @@ h1{
 }
 
 .bottom-nav{
-  font-family:Arial; sans-serif;
-  font-size: 12px;
+  position: relative;
   margin:auto;
   margin-top: 50px;
 
@@ -73,5 +72,19 @@ p{
   margin-left: 1em;
   margin-right:1em;
   font-size: 3em;
+}
+.icon{
+  height: 40px;
+  width: 40px;
+}
 
+.left_table{
+  padding: none;
+  margin-right: 20px;
+}
+
+.right_table{
+  text-align: justify;
+  padding-left: 20px;
+  padding-top: 10px;
 }

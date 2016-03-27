@@ -16,20 +16,33 @@
       <p>
         This week's blog post is on the wonderful ruby object: the Class. You may not know it but your whirring and complex ruby program is like a well oiled engine. That engine is a Class and the block, the alternator, the power steering, and all those components are all methods. Method are defined building blocks that serve a distinct purpose in the larger function, they spray gas in a flammable mist and ingite it, or spin a dynamo to charge up a battery, or filter oil as it flows, but they are just parts of the whole operation, the bigger picture, the Class. To all work in concert they have to have standardized inputs like instance variable. Just as an engine requires it's pulleys to line up and burns a specific type of fuel a methods are set up expecting a specific input and made to proces and send specific types of information.<br><br>
 
-        To define a class you need to title it with a capitalized and descriptive word and end it so it runs like you would a method:<br><br>class Engine<br><br>end<br><br>
+        To define a class you need to title it with a capitalized and descriptive word and end it so it runs like you would a method:
+        <br><br>
+        <pre>class Engine<br><br>end</pre>
+        <br><br>
 
-        You follow that with any attributes you want to set. These are the read/write permissions for the class followed by a symbol you are changing the permissions for. They can be attr_read, attr_write, or attr_accessor (to read and write).<br><br>class Engine<br>attr_accessor<br><br>end<br><br>
+        You follow that with any attributes you want to set. These are the read/write permissions for the class followed by a symbol you are changing the permissions for. They can be attr_read, attr_write, or attr_accessor (to read and write).
+        <br><br>
+        <pre>class Engine<br>attr_accessor<br><br>end</pre>
+        <br><br>
 
-        Next you need to initialize the class and you can set any instance variables. Again, instance variable are marked with an @ sign and are recognized by all methods within the class. If you are setting write or accessor attributes for the class this is a good time to make sure those symbols also correspond with instance variables so they can be recognized throughout the class. To initialize the class you write an initialize method like this (make sure you end it like a method too):<br><br>class Engine<br>attr_accessor<br><br>
-        def initialize<br> @variable = variable<br>end<br><br>end<br><br>
+        Next you need to initialize the class and you can set any instance variables. Again, instance variable are marked with an @ sign and are recognized by all methods within the class. If you are setting write or accessor attributes for the class this is a good time to make sure those symbols also correspond with instance variables so they can be recognized throughout the class. To initialize the class you write an initialize method like this (make sure you end it like a method too):
+        <br><br>
+         <pre>class Engine<br>
+         attr_accessor<br><br>
+         def initialize<br>
+         @variable = variable<br>
+         end<br>
+         <br>end</pre>
+        <br><br>
         Now that your class is set up you can get to the business end of things and define the methods you've no doubt described in your pseudocode and preplanning. Those methods fit in after your initialize method and you need to make sure you still end your class after. As your work in these methods remember that any variable that needs to be recognized in multiple methods must be defined as an instance variable with a @ in front of it and depending on your attributes you may be able to read or write some parts from outside the class.
-        <br><br>class Engine<br>attr_accessor<br><br>
-        def initialize<br> @variable = variable<br>end<br><br>def method_one<br>@longitude = @variable.length<br>end<br><br>def method_two<br>if @longitude >= 5<br>puts "longer than 5, dude"<br>end<br><br>end<br><br>
-        Now that your Class is chock full of useful methods, attributes, and instance variables you can call it and it's methods with lines like these:<br><br>
+        <br><br><pre>class Engine<br>attr_accessor<br><br>
+        def initialize<br> @variable = variable<br>end<br><br>def method_one<br>@longitude = @variable.length<br>end<br><br>def method_two<br>if @longitude >= 5<br>puts "longer than 5, dude"<br>end<br><br>end</pre><br><br>
+        Now that your Class is chock full of useful methods, attributes, and instance variables you can call it and it's methods with lines like these:<br><br><pre>
         start_up = Engine.new<br>
         start_up.method_one<br>
         start_up.method_two<br>
-        start_up.variable = "I can change my variable from here because of attr_accessor"
+        start_up.variable = "I can change my variable from here because of attr_accessor"</pre>
 
       </p>
 

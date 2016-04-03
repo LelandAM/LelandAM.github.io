@@ -1,20 +1,43 @@
 <!DOCTYPE html>
 <head>
-  <title>LelandAM Technical Blog</title>
+  <title>LelandAM Cheat Sheet</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
 </head>
 <body>
   <main>
-    <h1><!-- CHALLENGE TITLE --></h1>
+    <h1>Cheat Sheet: JavaScript Prototypes</h1>
     <hr>
     <h2><!-- EXERCISE # --></h2>
     <h4><!-- DATE --></h4>
 
     <section>
       <p>
-        <!-- Paragraph TEXT -->
+        JavaScript is a prototype based language and so fully embracing and understanding these will unlock doors to elegant and flexible coding. In JavaScript every object has a <em>prototype</em> which is itself an object and it is blank by default. The prototype property is what gives objects their properties and methods. When you made an object with object literal it's properties are inherited from Object.prototype. When JavaScript is reading your code and reaches an object it will attempt to find a property in that object and then check to see what is assigned in the prototype. <br><br>
+        The prototype property comes in handy for inheritance, it adds methods and properties to an object to make those available to instances of that object. Constructor functions are the most used way to construct prototype chains. Think of it this way, you can easily add a property or method to an object with object literal but to add a new property to a prototype you must use the constructor function:  
+
+        <pre>function person(first, last, age, eyecolor){
+          this.firstName = first;
+          this.lastName = last;
+          this.age = age;
+          this.eyeColor = eyecolor;
+        }
+        </pre>
+        <br>
+        Now you have a template for other persons and you can add properties with one line:
+        <br><br>
+
+        <pre>
+        this.prototype.nationality = "American"
+        </pre>
+        <br>
+        You can also add a new method to an existing prototype:
+        <br><br>
+        <pre>person.prototype.name = function(){
+            return this.firstName + " " + this.lastName;
+            };
+        </pre>
       </p>
 
 

@@ -1,46 +1,94 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title>LelandAM Home</title>
-  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
-</head>
-<body>
-<h1>Leland Meiners</h1>
-  <table class="top-nav">
-    <tr>
-      <td><a href="projects.html">Projects</a></td>
-      <td><a href="resume.html">Resume</a></td>
-      <td><a href="about.html">About</a></td>
-      <td><a href="contact.html">Contact</a></td>
-      <td><a href="blog/blog-index.html">Blog</a></td>
-    </tr>
-  </table>
-<hr />
+<!DOCTYPE html>
+<html lang="en">
+<!-- Magic. Do not touch! (c) 2017 Leland A. Meiners -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow, archive">
+    <meta name="referrer" content="always">
+    <meta name="description" content="Leland Meiners - Web Developer, UX Designer.">
+    <title>Leland Meiners</title>
+    <link rel="icon" href="images/glasses-thumb.png">
+    <link href="https://fonts.googleapis.com/css?family=Convergence|IM+Fell+English+SC" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </head>
+  <body>
+    <div id="header-container">
+        <img id="lelandname" src="images/lelandname.png">
+        <img id="glasses" src="images/glasses.png">
+    </div>
+    <div id="first" class="section">
+      <h4 id="blurb">Full Stack Web Developer, Designer, UX Enthusiast</h4>
+    </div>
+    <div id="second" class="section">
+    <section id="about">
+      <h2>Background:</h2>
+      <span class="paragraph">I'm a full stack web developer with a background in art direction, design, and photography. I'm a Dev Bootcamp Chicago graduate. There I learned Ruby, Javascript, SQLite (and about how I learn in general) in small intense groups while utilizing Agile work flow and Git VCS.</span>
+    </section>
+    </div>
+    <div id="third" class="section">
+      <section id="work">
+        <h2>Dev Projects</h2>
+        <ul class="paragraph">
+          <li class="project"><a href="https://github.com/LelandAM/Kinder">Kinder</a></li>
+          <li class="project"><a href="./projects/FeedHomer/feedhomer.html">Feed Homer</a></li>
+          <li class="project"><a href="./projects/512/fivetwelve.html">512</a></li>
+          <li class="project"><a href="./projects/bmsynth/bmsynth.html">BMSynth</a></li>
+          <li class="project"><a href="./projects/drawl/drawl.html">Drawl</a></li>
+        </ul>
+        <!-- <h2>Other Hustles</h2>
+        <ul class="side-hustles">
+          <li class="side-hustle"><a href="http://www.lelandmeiners.com/">Photos</a></li>
+          <li class="side-hustle"><a href="http://www.lelandmeiners.com/design">Design</a></li>
+        </ul> -->
+      </section>
+    </div>
+    <div id="fourth" class="section">
+      <section id="contact">
 
-<div>
-  <p class="intro">
-      My name is <a href="https://www.google.com/search?espv=2&biw=1455&bih=787&tbm=isch&q=leland+name&revid=1989087578&sa=X&ved=0ahUKEwjvntiR0qXLAhVHkIMKHWapAx0Q1QIIKA">Leland.</a><br> I take <a href="http://www.lelandmeiners.com/">photos</a> and move around type and <a href="http://www.lelandmeiners.com/design/">shapes.</a> I'm enrolled in <a href="http://www.devbootcamp.com">DevBootcamp Chicago.</a> I am working to become a programmer so I can work with <a href="https://en.wikipedia.org/wiki/You">you.</a>
-</p>
+       <!--  <div class="container">
+          <div class="row">
+            <h1 class="text-center"><a href="#myModal" role="button" class="btn btn-primary btn-md" data-toggle="modal">Ask Me A Question</a></h1>
+          </div>
+        </div> -->
+
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      </div>
+      <div class="modal-body">
+      <header>CONTACT ME</header>
+      <form id="form" class="topBefore" method="post" action="mailto:lelandam@gmail.com">
+        <input id="name"  type="text" placeholder="NAME">
+        <input id="email"  type="text" placeholder="E-MAIL">
+        <textarea id="question"  type="text" placeholder="QUESTION"></textarea>
+        <input id="submit" type="submit" value="SEND">
+      </form>
+        <!-- <form class="form-horizontal col-sm-12">
+          <div class="form-group"><label>Name</label><input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"></div>
+          <div class="form-group"><label>Question</label><textarea class="form-control" placeholder="Your question here.." data-placement="top" data-trigger="manual"></textarea></div>
+          <div class="form-group"><label>E-Mail</label><input class="form-control email" placeholder="email@you.com" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
+          <div class="form-group"><button type="submit" class="btn btn-success pull-right">Send It!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
+        </form> -->
+      </div>
+    </div>
+  </div>
 </div>
 
-
-<hr />
-<table class="bottom-nav">
-  <tr>
-      <td><a href="https://github.com/LelandAM"><img class="icon" src="imgs/GitHub-Mark.png"></a></td>
-      <td><a href="https://www.linkedin.com/in/leland-meiners-36363337"><img class="icon" src="imgs/linkedin.png"></a></td>
-      <td><a href="https://www.instagram.com/eyemeat/?hl=en"><img class="icon" src="imgs/instagramicon.png"></a></td>
-      <td><a href="https://www.facebook.com/leland.meiners"><img class="icon" src="imgs/facebook.png"></a></td>
-
-  </tr>
-</table>
-
-
-
-
-</body>
+        <!-- <h2>Further Research</h2> -->
+        <ul class="contacts">
+          <li class="contact"><a href="https://www.linkedin.com/in/leland-meiners-36363337"><img class="icon" src="images/linkedin.png"></a></li>
+          <li class="contact"><a href="https://github.com/LelandAM"><img class="icon" src="images/GitHub-Mark.png"></a></li>
+          <li class="contact"><a href="http://www.lelandmeiners.com/"><img id="round" class="icon" src="images/headshot-bw.jpg"></a></li>
+        </ul>
+      </section>
+    </div>
+  </body>
 </html>
-
-<!-- div tag: http://www.html-5-tutorial.com/div-tag.htm
-  model site after book covers. sci-fi pulp if trashy and colorful sounds like fun or use some Chip Kidd inspiration. Also Alec Soth's site has nice simple but modern form, good color palette and mouseover color change that doesnt distract from the message
-  -->

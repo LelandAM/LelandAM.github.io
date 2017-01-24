@@ -1,0 +1,64 @@
+#title{
+  position: fixed;
+  background: none;
+  left: 35%;
+  top: 50px;
+}
+#info{
+  position: fixed;
+  background: none;
+  left: 40%;
+  bottom: 100px;
+}
+#container {
+  width: 80%;
+  position: fixed;
+  top: 250px;
+  left: 50px;
+}
+#donut_table{
+  width: 100%;
+  height: 110px;
+}
+#donut_table td {
+  height: 55px;
+  width: 55px;
+}
+#donut_table tr#player1 td.active {
+  background-image: url("player-a.png");
+  background-repeat: no-repeat;
+  height: 55px;
+  width: 55px;
+}
+#donut_table tr#player2 td.active {
+  background-image: url("player-c.png");
+  background-repeat: no-repeat;
+  height: 55px;
+  width: 55px;
+}
+#target {
+  background-image: url("hungry-homer.png");
+  position: fixed;
+  top: 100px;
+  right: 50px;
+  z-index: 1;
+  height: 400px;
+  width: 298px;
+}
+body {
+  margin: 0;
+}
+@keyframes animatedBackground {
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
+}
+#background-area { 
+  margin: 0;
+  width: 100%; 
+  height: 800px; 
+  background-image: url("simpsons-clouds.jpg");
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  z-index: -1;
+  animation: animatedBackground 40s linear infinite;
+}

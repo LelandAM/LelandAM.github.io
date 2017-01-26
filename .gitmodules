@@ -1,3 +1,6 @@
 [submodule "projects/drawl"]
 	path = projects/drawl
 	url = https://github.com/LelandAM/drawl.git
+[submodule "projects/bmsynth"]
+	path = projects/bmsynth
+	url = https://github.com/LelandAM/bmsynth.git

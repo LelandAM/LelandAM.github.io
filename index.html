@@ -11,10 +11,13 @@
     <title>Leland Meiners</title>
     <link rel="icon" href="images/glasses-thumb.png">
     <link href="https://fonts.googleapis.com/css?family=Convergence|IM+Fell+English+SC" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+<!--     <script src="js/bootstrap.min.js"></script> -->
     <script type="text/javascript" src="./js/main.js"></script>
   </head>
   <body>
@@ -42,48 +45,98 @@
           <li class="project"><a href="./projects/bmsynth/index.html">BMSynth</a></li>
           <li class="project"><a href="./projects/drawl/drawl.html">Drawl</a></li>
         </ul>
-        <!-- <h2>Other Hustles</h2>
-        <ul class="side-hustles">
-          <li class="side-hustle"><a href="http://www.lelandmeiners.com/">Photos</a></li>
-          <li class="side-hustle"><a href="http://www.lelandmeiners.com/design">Design</a></li>
+        <!-- <ul>
+          <li class="project">
+            <a class="modal-trigger waves-effect waves-red btn" href="#kinder">Kinder</a>
+          </li>
+          <li class="project">
+            <a class="modal-trigger waves-effect waves-red btn" href="#boardgames">Boardgame Database</a>
+          </li>
+          <li class="project">
+            <a class="modal-trigger waves-effect waves-red btn" href="#feedhomer">Feed Homer</a>
+          </li>
+          <li class="project">
+            <a class="modal-trigger waves-effect waves-red btn" href="#fivetwleve">512</a>
+          </li>
+          <li class="project">
+            <a class="modal-trigger waves-effect waves-red btn" href="#bmsynth">BMSynth</a>
+          </li>
+          <li class="project">
+            <a class="modal-trigger waves-effect waves-red btn" href="#drawl">Drawl</a>
+          </li>
         </ul> -->
+
+  <div id="kinder" class="project modal">
+    <div class="modal-content">
+      <h4>Kinder</h4>
+      <p>A bunch of text</p>
+      <a href="https://github.com/LelandAM/Kinder">Kinder</a>
+    </div>
+    <!-- <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+    </div> -->
+  </div>
+
+  <div id="boardgames" class="project modal">
+    <div class="modal-content">
+      <h4>Boardgames</h4>
+      <p>A bunch of text</p>
+      <a href="https://github.com/LelandAM/boardgames">Boardgame Database</a>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+    </div>
+  </div>
+
+  <div id="feedhomer" class="project modal">
+    <div class="modal-content">
+      <h4>Feed Homer</h4>
+      <p>A bunch of text</p>
+      <a href="./projects/feedhomer/feedhomer.html">Feed Homer</a>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+    </div>
+  </div>
+
+  <div id="fivetwleve" class="project modal">
+    <div class="modal-content">
+      <h4>512</h4>
+      <p>A bunch of text</p>
+      <a href="./projects/512/fivetwelve.html">512</a>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+    </div>
+  </div>
+
+  <div id="bmsynth" class="project modal">
+    <div class="modal-content">
+      <h4>Beautiful Meaningful Synthsizer</h4>
+      <p>A bunch of text</p>
+      <a href="./projects/bmsynth/index.html">BMSynth</a>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+    </div>
+  </div>
+
+  <div id="drawl" class="project modal">
+    <div class="modal-content">
+      <h4>Drawl</h4>
+      <p>A bunch of text</p>
+      <a href="./projects/drawl/drawl.html">Drawl</a>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+    </div>
+  </div>
+
+    
       </section>
     </div>
     <div id="fourth" class="section">
       <section id="contact">
-
-       <!--  <div class="container">
-          <div class="row">
-            <h1 class="text-center"><a href="#myModal" role="button" class="btn btn-primary btn-md" data-toggle="modal">Ask Me A Question</a></h1>
-          </div>
-        </div> -->
-
-<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-      </div>
-      <div class="modal-body">
-      <header>CONTACT ME</header>
-      <form id="form" class="topBefore" method="post" action="mailto:lelandam@gmail.com">
-        <input id="name"  type="text" placeholder="NAME">
-        <input id="email"  type="text" placeholder="E-MAIL">
-        <textarea id="question"  type="text" placeholder="QUESTION"></textarea>
-        <input id="submit" type="submit" value="SEND">
-      </form>
-        <!-- <form class="form-horizontal col-sm-12">
-          <div class="form-group"><label>Name</label><input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"></div>
-          <div class="form-group"><label>Question</label><textarea class="form-control" placeholder="Your question here.." data-placement="top" data-trigger="manual"></textarea></div>
-          <div class="form-group"><label>E-Mail</label><input class="form-control email" placeholder="email@you.com" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
-          <div class="form-group"><button type="submit" class="btn btn-success pull-right">Send It!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
-        </form> -->
-      </div>
-    </div>
-  </div>
-</div>
-
-        <!-- <h2>Further Research</h2> -->
         <ul class="contacts">
           <li class="contact"><a href="https://www.linkedin.com/in/leland-meiners-36363337"><img class="icon" src="images/linkedin.png"></a></li>
           <li class="contact"><a href="https://github.com/LelandAM"><img class="icon" src="images/GitHub-Mark.png"></a></li>

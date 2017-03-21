@@ -1,6 +1,6 @@
 body{
   font-family: Georgia, serif;
-  background-color: #fff
+  background-color: #fff;
   margin: 0;
 }
 #headercontainer{
@@ -40,7 +40,9 @@ body{
 }
 #blurb{
   margin: 30% auto 0 auto;
+  z-index: 2;
   font-family: 'IM Fell English SC', serif;
+  background-color: #fff;
  /* font-family: 'Convergence', sans-serif;*/
 }
 .section{
@@ -51,6 +53,7 @@ body{
 }
 #first{
   background-color: #fff;
+  padding-bottom: 0;
 }
 #about{
   position: relative;

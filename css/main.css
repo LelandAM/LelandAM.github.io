@@ -86,6 +86,13 @@ body{
 }
 .project{
   margin-bottom: 10px;
+  opacity: 1;
+  z-index: 1005;
+}
+.modal{
+  margin-bottom: 10px;
+  opacity: 1;
+  z-index: 1005;
 }
 #fourth{
   background-color: #fff;

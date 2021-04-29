@@ -43,6 +43,8 @@ body{
   z-index: 2;
   font-family: 'IM Fell English SC', serif;
   background-color: #fff;
+  width: 100%;
+  text-align: center;
  /* font-family: 'Convergence', sans-serif;*/
 }
 .section{
@@ -59,7 +61,7 @@ body{
   position: relative;
   z-index: 3;
   display: block;
-  margin: 60px 0 0 50px;
+  margin: 50px 0 0 50px;
   width: 500px;
 }
 #second{
@@ -72,11 +74,11 @@ body{
   z-index: 3;
   font-size: 2em;
 }
-#work{
+#projects{
   position: relative;
   z-index: 3;
   display: block;
-  margin: 100px 0 0 50px;
+  margin: 50px 0 0 50px;
   width: 500px;
 }
 #third{
@@ -95,7 +97,16 @@ body{
   z-index: 1005;
 }
 #fourth{
-  background-color: #fff;
+  position: relative;
+  z-index: 3;
+  background-color: #ededed;
+}
+#work{
+  position: relative;
+  z-index: 3;
+  display: block;
+  margin: 50px 0 0 50px;
+  width: 500px;
 }
 #contact{
   margin: 50% auto 0 auto;
@@ -109,7 +120,7 @@ body{
 .contacts li{
   display: inline;
   list-style-type: none;
-  padding-right: 20px;
+  padding: 0 10px;
 }
 .icon{
   width: 60px;
@@ -117,6 +128,9 @@ body{
 }
 #round{
   border-radius: 50%;
+}
+#fifth{
+  background-color: #fff;
 }
 @media only screen 
 and (max-width: 760px) {
